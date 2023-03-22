@@ -4,23 +4,33 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import logo from '../../../assets/images/MainLogo.png';
+
 const Header = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar fixed='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Nick Morris</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <img 
+                src={logo}
+                width='75'
+                height='60'
+                className='d-inline-block align-top'
+                alt='Brand Logo' 
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">About me</Nav.Link>
-              <Nav.Link href="#pricing">Work</Nav.Link>
-              <Nav.Link href="#deets">Resume</Nav.Link>
+              <Nav.Link href="#aboutMe">About me</Nav.Link>
+              <Nav.Link href="#work">Work</Nav.Link>
+              <Nav.Link href="#resume">Resume</Nav.Link>
             </Nav>
             <Nav>
               <NavDropdown title="Contact Me" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">New Inquieries</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">LinkedIn</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">GitHub</NavDropdown.Item>
+                <NavDropdown.Item href="#newInquiry">New Inquiry</NavDropdown.Item>
+                <NavDropdown.Item href="#linkedIn">LinkedIn</NavDropdown.Item>
+                <NavDropdown.Item href="#gitHub">GitHub</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
