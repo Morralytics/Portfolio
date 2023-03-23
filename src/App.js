@@ -1,7 +1,8 @@
 import React from "react";
 import { Home } from "./pages/Home";
+import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
-import { Project } from "./pages/Project";
+import { Work } from "./pages/Work";
 import { Resume } from "./pages/Resume";
 
 import Header from "./components/ui/Header"
@@ -13,8 +14,9 @@ function App() {
     <Header />
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/About' element={<About />} />
       <Route path='/Contact' element={<Contact />} />
-      <Route path='/Project' element={<Project />} />
+      <Route path='/Work' element={<Work />} />
       <Route path='/Resume' element={<Resume />} />
     </Routes>
     </>

@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img 
                 src={logo}
                 width='75'
@@ -22,9 +22,9 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#aboutMe">About me</Nav.Link>
-              <Nav.Link href="#work">Work</Nav.Link>
-              <Nav.Link href="#resume">Resume</Nav.Link>
+              <Nav.Link href="About">About me</Nav.Link>
+              <Nav.Link href="Work">Work</Nav.Link>
+              <Nav.Link href="Resume">Resume</Nav.Link>
             </Nav>
             <Nav>
               <NavDropdown title="Contact Me" id="collasible-nav-dropdown">
