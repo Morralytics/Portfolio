@@ -13,6 +13,7 @@ code {
 }
 
 :root {
+  --dark-gray: #212529;
   --darkblue: #0a191e;
   --cyan: #45c490;
   --yellow: #d8b65c;
