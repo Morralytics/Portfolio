@@ -1,4 +1,5 @@
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Container from 'react-bootstrap/Container';
@@ -11,8 +12,8 @@ import logo from '../../MainLogo.png';
 
 const Header = () => {
   const styles= {
-    linkedIn: {
-      color: '#70B5F9'
+    linkLogoColor: {
+      color: '#1E3050'
     }
   }
   return (
@@ -36,10 +37,10 @@ const Header = () => {
           </Nav>
           <Nav>
             <NavDropdown title="Contact Me" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#newInquiry">New Inquiry</NavDropdown.Item>
+              <NavDropdown.Item href="/contact"><FontAwesomeIcon icon={faEnvelope} style={styles.linkLogoColor}/>{' '}Email</NavDropdown.Item>
               
-                <NavDropdown.Item href="https://www.linkedin.com/in/nick-morris-morralytics" target='_blank'><FontAwesomeIcon icon={faLinkedin} style={styles.linkedIn}/>LinkedIn</NavDropdown.Item>
-              <NavDropdown.Item href="#gitHub">GitHub</NavDropdown.Item>
+                <NavDropdown.Item href="https://www.linkedin.com/in/nick-morris-morralytics" target='_blank'><FontAwesomeIcon icon={faLinkedin} style={styles.linkLogoColor}/>{' '}LinkedIn</NavDropdown.Item>
+              <NavDropdown.Item href="https://github.com/Morralytics" target='_blank'><FontAwesomeIcon icon={faSquareGithub} style={styles.linkLogoColor}/>{' '}GitHub</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
