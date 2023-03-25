@@ -1,8 +1,7 @@
-import { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Container, FloatingLabel, Form, Button } from "react-bootstrap";
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
-require('dotenv').config();
 
 export const Contact = () => {
     const [isHover, setIsHover] = useState(false);
@@ -13,6 +12,31 @@ export const Contact = () => {
 
     const handleHoverOut = () => {
         setIsHover(false);
+    };
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_USER_ID
+        )
+            .then((result) => {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Your message was sent successfully!'
+                })
+            }, (err) => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops, something went wrong!',
+                    text: err.text,
+                })
+            });
+        e.target.reset();
     };
 
     const styles = {
@@ -49,7 +73,7 @@ export const Contact = () => {
     return (
         <div style={styles.background}>
             <Container style={styles.containerStyle}>
-                <div className="form" style={styles.form}>
+                <Form ref={form} style={styles.form} onSubmit={sendEmail}>
                     <>
                         <div>
                             <p style={styles.text}>
@@ -63,14 +87,14 @@ export const Contact = () => {
                             label="Your name"
                             className="mb-3"
                         >
-                            <Form.Control as="textarea" placeholder="Your name" />
+                            <Form.Control type="text" name="from_name" as="textarea" placeholder="Your name" />
                         </FloatingLabel>
                         <FloatingLabel
                             controlId="emailInput"
                             label="E-mail"
                             className="mb-3"
                         >
-                            <Form.Control type="email" placeholder="E-mail" />
+                            <Form.Control type="email" name="from_email" placeholder="E-mail" />
                         </FloatingLabel>
                         <FloatingLabel
                             controlId="commentInput"
@@ -78,15 +102,16 @@ export const Contact = () => {
                             className="mb-3">
                             <Form.Control
                                 as="textarea"
+                                name="message"
                                 placeholder="What would you like to say?"
                                 style={{ height: '100px' }}
                             />
                         </FloatingLabel>
                         <FloatingLabel>
-                            <Button style={{...styles.btn, ...styles.hover}} onMouseEnter={handleHoverIn} onMouseLeave={handleHoverOut} as="input" type="submit" value="Send"/>
+                            <Button style={{ ...styles.btn, ...styles.hover }} onMouseEnter={handleHoverIn} onMouseLeave={handleHoverOut} as="input" type="submit" value="Send" />
                         </FloatingLabel>
                     </>
-                </div>
+                </Form>
             </Container>
         </div>
     )
