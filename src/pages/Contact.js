@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Container, FloatingLabel, Form, Button } from "react-bootstrap";
+import emailjs from 'emailjs-com';
+import Swal from "sweetalert2";
+require('dotenv').config();
 
 export const Contact = () => {
     const [isHover, setIsHover] = useState(false);
