@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 
-import logo from '../../MainLogo.png';
+import logo from '../../images/MainLogo.png';
 
 const Header = () => {
   const styles= {
