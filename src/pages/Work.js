@@ -1,6 +1,10 @@
 import { Container, Carousel } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+
 import meetIO from "../images/MeetIOProject.png";
 import yodaTranslate from "../images/YodaProject.png";
+import CardFooter from "../components/ui/CardFooter";
 
 export const Work = () => {
     const styles = {
@@ -21,6 +25,9 @@ export const Work = () => {
         img: {
             height: '270px',
             width: '100%',
+        },
+        linkLogoColor: {
+            color: '#1E3050',
         }
     }
     return (
@@ -34,8 +41,9 @@ export const Work = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h5>Yoda Translate</h5>
-                            <p>Sample Text</p>
+                            <h5>Yoda Translate Application</h5>
+                            <p>This unique application utilizes two API's that when combined, produce an inspirational quote from the widely known character, Yoda!</p>
+                            <CardFooter />
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -45,8 +53,8 @@ export const Work = () => {
                             alt="Second slide"
                         />
                         <Carousel.Caption>
-                            <h5>Meet-IO</h5>
-                            <p>Sample Text</p>
+                            <h5>Meet-IO Workplace Application</h5>
+                            <CardFooter />
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
