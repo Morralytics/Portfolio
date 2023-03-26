@@ -1,4 +1,4 @@
-import { Container, Card } from "react-bootstrap";
+import { Container, Carousel } from "react-bootstrap";
 import meetIO from "../images/MeetIOProject.png";
 import yodaTranslate from "../images/YodaProject.png";
 
@@ -26,30 +26,30 @@ export const Work = () => {
     return (
         <div style={styles.background}>
             <Container>
-                <div className="meetIO-card" style={{...styles.text, ...styles.card}}>
-                    <Card className="bg-dark text-white">
-                        <Card.Img src={meetIO} style={styles.img} alt="Card image" />
-                        <Card.ImgOverlay>
-                            <Card.Title>Meet-IO</Card.Title>
-                            <Card.Text>
-                                Sample Text
-                            </Card.Text>
-                            <Card.Text>Secondary Text</Card.Text>
-                        </Card.ImgOverlay>
-                    </Card>
-                </div>
-                <div className="yodaTranslate-card" style={{...styles.text, ...styles.card}}>
-                    <Card className="bg-dark text-white">
-                        <Card.Img src={yodaTranslate} style={styles.img} alt="Card image" />
-                        <Card.ImgOverlay>
-                            <Card.Title>Yoda Translate</Card.Title>
-                            <Card.Text>
-                                Sample Text
-                            </Card.Text>
-                            <Card.Text>Secondary Text</Card.Text>
-                        </Card.ImgOverlay>
-                    </Card>
-                </div>
+                <Carousel variant="dark">
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={yodaTranslate}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h5>Yoda Translate</h5>
+                            <p>Sample Text</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={meetIO}
+                            alt="Second slide"
+                        />
+                        <Carousel.Caption>
+                            <h5>Meet-IO</h5>
+                            <p>Sample Text</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
             </Container>
         </div>
     )
