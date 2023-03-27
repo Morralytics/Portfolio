@@ -19,7 +19,7 @@ This application was created to display my the projects I have completted as wel
 ## Installation 
 
 Github repository: https://github.com/Morralytics/Portfolio <br />
-Heroku deployment: https://morralytics-portfolio.herokuapp.com/
+Live Portfolio deployment: https://morralytics.github.io/Portfolio
 
 ## Usage
 Enjoy the creative process behind my portfolio and stay in touch with new developments and knowledge on Web Development.
