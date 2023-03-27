@@ -25,7 +25,13 @@ export const Home = () => {
             width: "40%",
             marginLeft: "auto",
             marginRight: "auto",
-        }
+        },
+        imgStyle: {
+            border: '2px groove',
+            borderRadius: '10px',
+            padding: '10px',
+            boxShadow: '3px 3px 12px 8px #d8b65c'
+        },
     }
     return (
         <div style={styles.background}>
@@ -35,14 +41,17 @@ export const Home = () => {
                         Hello and welcome!
                     </p>
                 </div>
+                <br></br>
                 <div style={styles.imgAlign}>
                     <img
                         className="d-block w-100 img-fluid rounded-circle"
                         src={ProfilePicure}
                         alt="Profile"
+                        style={styles.imgStyle}
                     />
                 </div>
                 <div style={{...styles.textAlign, ...styles.textStyle, ...styles.textContent}}>
+                    <br></br>
                     <p>
                         My name is Nick Morris
                         <br></br>
