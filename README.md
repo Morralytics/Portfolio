@@ -19,7 +19,7 @@ This application was created to display my the projects I have completted as wel
 ## Installation 
 
 Github repository: https://github.com/Morralytics/Portfolio <br />
-Live Portfolio deployment: https://morralytics.github.io/Portfolio
+Live Portfolio deployment: https://morralyticsportfolio.netlify.app/
 
 ## Usage
 Enjoy the creative process behind my portfolio and stay in touch with new developments and knowledge on Web Development.
