@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Link to='/' className='navbar-brand'>
+        <Link to='/Portfolio' className='navbar-brand'>
           <img
             src={logo}
             width='75'
@@ -37,7 +37,8 @@ const Header = () => {
           </Nav>
           <Nav>
             <NavDropdown title="Contact Me" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/contact"><FontAwesomeIcon icon={faEnvelope} style={styles.linkLogoColor}/>{' '}Email</NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to='/Contact' style={styles.linkLogoColor}><FontAwesomeIcon icon={faEnvelope} style={styles.linkLogoColor}/>{' '}Email</Link></NavDropdown.Item>
               
                 <NavDropdown.Item href="https://www.linkedin.com/in/nick-morris-morralytics" target='_blank'><FontAwesomeIcon icon={faLinkedin} style={styles.linkLogoColor}/>{' '}LinkedIn</NavDropdown.Item>
               <NavDropdown.Item href="https://github.com/Morralytics" target='_blank'><FontAwesomeIcon icon={faSquareGithub} style={styles.linkLogoColor}/>{' '}GitHub</NavDropdown.Item>
