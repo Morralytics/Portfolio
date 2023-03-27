@@ -79,6 +79,7 @@ export const Work = () => {
                     size= '3x'
                     style={styles.linkLogo}
                   />
+                  </a>
                   {' '}
                   <a
                   href="https://meetio-workspace.herokuapp.com/"
@@ -90,8 +91,7 @@ export const Work = () => {
                     size="3x"
                     style={styles.linkLogo}
                   />
-                </a>
-                </a>
+                  </a>
               </div>
             </Carousel.Caption>
           </Carousel.Item>
@@ -100,7 +100,7 @@ export const Work = () => {
             <Carousel.Caption>
               <h5 style={styles.updateText}>Meet-IO Workplace Application</h5>
               <hr style={styles.text}></hr>
-              <p style={{...styles.text, ...styles.alignment}}>An application that is designed for any team/family/or simply someone with a busy schedule to track what they need to get done and with whom via a live chat function!</p>
+              <p style={{...styles.text, ...styles.alignment}}>An application that is designed for any team/family/or simply someone with a busy schedule to track what they need to get done and with whom via a live chat function utilzing websockets!</p>
               <div style={styles.footer}>
                 <a
                   href="https://github.com/Morralytics/Meet-IO"
