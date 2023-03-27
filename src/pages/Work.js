@@ -17,15 +17,22 @@ export const Work = () => {
       textAlign: "center",
       fontSize: "25px"
     },
+    updateText: {
+        color: "white",
+        textAlign: "center",
+        fontSize: "25px",
+    },
+    alignment: {
+        fontSize: "20px"
+    },
     card: {
       width: "50%",
       marginLeft: "auto",
       marginRight: "auto",
       paddingTop: "5%",
     },
-    img: {
-      height: "270px",
-      width: "100%",
+    cardPanel: {
+      borderRadius: '5px'
     },
     linkLogo: {
       color: "#1E3050",
@@ -35,19 +42,23 @@ export const Work = () => {
         display: 'flex',
         justifyContent: 'center',
     },
-    edge: {
-      backgroundColor: 'red',
-    }
+    containerStyle: {
+        border: '2px groove',
+        borderRadius: '10px',
+        padding: '10px',
+        boxShadow: '3px 3px 12px 8px #d8b65c'
+    },
   };
   return (
     <div style={styles.background}>
       <Container>
-        <Carousel>
-          <Carousel.Item>
+        <Carousel style={styles.containerStyle}>
+          <Carousel.Item >
             <img
               className="d-block w-100"
               src={yodaTranslate}
               alt="First slide"
+              style={styles.cardPanel}
             />
             <Carousel.Caption>
               <h5 style={styles.text}>Yoda Translate Application</h5>
@@ -65,7 +76,7 @@ export const Work = () => {
                 >
                   <FontAwesomeIcon
                     icon={faSquareGithub}
-                    size="3x"
+                    size= '3x'
                     style={styles.linkLogo}
                   />
                   {' '}
@@ -85,11 +96,11 @@ export const Work = () => {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src={meetIO} alt="Second slide" />
+            <img className="d-block w-100" src={meetIO} alt="Second slide" style={styles.cardPanel}/>
             <Carousel.Caption>
-              <h5 style={styles.text}>Meet-IO Workplace Application</h5>
+              <h5 style={styles.updateText}>Meet-IO Workplace Application</h5>
               <hr style={styles.text}></hr>
-              <p style={styles.text}>Sample text</p>
+              <p style={{...styles.text, ...styles.alignment}}>An application that is designed for any team/family/or simply someone with a busy schedule to track what they need to get done and with whom via a live chat function!</p>
               <div style={styles.footer}>
                 <a
                   href="https://github.com/Morralytics/Meet-IO"
