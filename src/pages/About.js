@@ -1,3 +1,4 @@
+import React from "react";
 import { Container, Card } from "react-bootstrap";
 import Bridge from '../images/Bridge.JPEG';
 import Car from '../images/Car.JPEG';
@@ -25,7 +26,7 @@ export const About = () => {
         },
         cardStyle: {
             display: 'flex',
-            gap: '15px',
+            gap: '30px',
         },
         secondaryText: {
             color: 'white',
@@ -38,7 +39,10 @@ export const About = () => {
         },
         listStyle: {
             lineHeight: '30px'
-        }
+        },
+        imgStyle: {
+            boxShadow: '3px 3px 12px 8px #d8b65c'
+        },
     }
     return (
         <div style={styles.background}>
@@ -50,40 +54,40 @@ export const About = () => {
                 </div>
                 <br></br>
                 <div style={{ ...styles.text, ...styles.cardStyle }}>
-                    <Card>
+                    <Card style={styles.imgStyle}>
                         <Card.Img variant="top" src={Bridge} />
                         <Card.Body>
-                            <Card.Title>Sample Title</Card.Title>
+                            <Card.Title>Forward onto Freedom</Card.Title>
                             <Card.Text>
-                                Text content
+                                Taken off the Oregon Coast during a trip not planned
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <small className="text-muted">Supporting text</small>
+                            <small className="text-muted">View the image on Instagram</small>
                         </Card.Footer>
                     </Card>
-                    <Card>
+                    <Card style={styles.imgStyle}>
                         <Card.Img variant="top" src={Car} />
                         <Card.Body>
-                            <Card.Title>Sample Title</Card.Title>
+                            <Card.Title>Midnight Strider</Card.Title>
                             <Card.Text>
-                                Text content
+                                Car fanatic taken locally in Bend Oregon
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <small className="text-muted">Supporting text</small>
+                            <small className="text-muted">View the image on Instagram</small>
                         </Card.Footer>
                     </Card>
-                    <Card>
+                    <Card style={styles.imgStyle}>
                         <Card.Img variant="top" src={Water} />
                         <Card.Body>
-                            <Card.Title>Sample Title</Card.Title>
+                            <Card.Title>Rapid Growth</Card.Title>
                             <Card.Text>
-                                Text content
+                                Beautiful river hiding from those unfamiliar with Central Oregon
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <small className="text-muted">Supporting text</small>
+                            <small className="text-muted">View the image on Instagram</small>
                         </Card.Footer>
                     </Card>
                 </div>
