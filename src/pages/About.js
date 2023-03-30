@@ -62,9 +62,6 @@ export const About = () => {
                                 Taken off the Oregon Coast during a trip not planned
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">View the image on Instagram</small>
-                        </Card.Footer>
                     </Card>
                     <Card style={styles.imgStyle}>
                         <Card.Img variant="top" src={Car} />
@@ -74,9 +71,6 @@ export const About = () => {
                                 Car fanatic taken locally in Bend Oregon
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">View the image on Instagram</small>
-                        </Card.Footer>
                     </Card>
                     <Card style={styles.imgStyle}>
                         <Card.Img variant="top" src={Water} />
@@ -86,9 +80,6 @@ export const About = () => {
                                 Beautiful river hiding from those unfamiliar with Central Oregon
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">View the image on Instagram</small>
-                        </Card.Footer>
                     </Card>
                 </div>
                 <br></br>
