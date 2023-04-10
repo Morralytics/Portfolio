@@ -13,11 +13,6 @@ export const Work = () => {
       height: "100vh",
     },
     text: {
-      color: "black",
-      textAlign: "center",
-      fontSize: "25px"
-    },
-    updateText: {
         color: "white",
         textAlign: "center",
         fontSize: "25px",
@@ -48,6 +43,12 @@ export const Work = () => {
         padding: '10px',
         boxShadow: '3px 3px 12px 8px #d8b65c'
     },
+    caption: {
+      marginBottom: '160px',
+    },
+    captionAdjust: {
+      marginBottom: '140px',
+    },
   };
   return (
     <div style={styles.background}>
@@ -60,7 +61,6 @@ export const Work = () => {
               alt="First slide"
               style={styles.cardPanel}
             />
-            <Carousel.Caption>
               <h5 style={styles.text}>Yoda Translate Application</h5>
               <hr style={styles.text}></hr>
               <p style={styles.text}>
@@ -68,7 +68,8 @@ export const Work = () => {
                 produce an inspirational quote from the widely known character,
                 Yoda!
               </p>
-              <div>
+            <Carousel.Caption style={styles.caption}>
+              <div style={styles.footer}>
                 <a
                   href="https://github.com/Morralytics/Yoda-Translator"
                   rel="noreferrer"
@@ -96,11 +97,15 @@ export const Work = () => {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src={meetIO} alt="Second slide" style={styles.cardPanel}/>
-            <Carousel.Caption>
-              <h5 style={styles.updateText}>Meet-IO Workplace Application</h5>
+            <img 
+              className="d-block w-100" 
+              src={meetIO} alt="Second slide" 
+              style={styles.cardPanel}
+            />
+              <h5 style={styles.text}>Meet-IO Workplace Application</h5>
               <hr style={styles.text}></hr>
               <p style={{...styles.text, ...styles.alignment}}>An application that is designed for any team/family/or simply someone with a busy schedule to track what they need to get done and with whom via a live chat function utilzing websockets!</p>
+            <Carousel.Caption style={styles.captionAdjust}>
               <div style={styles.footer}>
                 <a
                   href="https://github.com/Morralytics/Meet-IO"

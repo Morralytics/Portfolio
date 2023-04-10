@@ -38,7 +38,8 @@ export const About = () => {
             marginRight: "auto",
         },
         listStyle: {
-            lineHeight: '30px'
+            lineHeight: '30px',
+            listStyleType: 'none',
         },
         imgStyle: {
             boxShadow: '3px 3px 12px 8px #d8b65c'
