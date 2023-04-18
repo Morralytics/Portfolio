@@ -5,6 +5,7 @@ import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 
 import meetIO from "../images/MeetIOProject.png";
 import yodaTranslate from "../images/YodaProject.png";
+import glazedAndConfused from "../images/GlazedAndConfused.png"
 
 export const Work = () => {
   const styles = {
@@ -49,6 +50,9 @@ export const Work = () => {
     captionAdjust: {
       marginBottom: '140px',
     },
+    captionAdjustTwo: {
+      marginBottom: '110px'
+    }
   };
   return (
     <div style={styles.background}>
@@ -121,6 +125,44 @@ export const Work = () => {
                 {' '}
                 <a
                   href="https://meetio-workspace.herokuapp.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                 <FontAwesomeIcon
+                    icon={faSquareArrowUpRight}
+                    size="3x"
+                    style={styles.linkLogo}
+                  />
+                </a>
+              </div>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img 
+              className="d-block w-100" 
+              src={glazedAndConfused} alt="Third Slide" 
+              style={styles.cardPanel}
+            />
+              <h5 style={styles.text}>Glazed & Confused</h5>
+              <hr style={styles.text}></hr>
+              <p style={{...styles.text, ...styles.alignment}}>An application that is designed for a flavorful and new Donut Shop that takes the user through a fantastic donut shopping experience!</p>
+            <Carousel.Caption style={styles.captionAdjustTwo}>
+              <div style={styles.footer}>
+                <a
+                  href="https://github.com/Morralytics/Glazed-and-Confused"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={faSquareGithub}
+                    size="3x"
+                    style={styles.linkLogo}
+                  />
+                </a>
+                {' '}
+                <br></br>
+                <a
+                  href="https://glazed-and-confused.herokuapp.com/"
                   rel="noreferrer"
                   target="_blank"
                 >
