@@ -162,7 +162,7 @@ export const Work = () => {
                 {' '}
                 <br></br>
                 <a
-                  href="https://glazed-and-confused.herokuapp.com/"
+                  href="https://glazed-and-confused-app.herokuapp.com/"
                   rel="noreferrer"
                   target="_blank"
                 >
