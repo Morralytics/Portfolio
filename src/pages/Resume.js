@@ -14,7 +14,8 @@ export const Resume = () => {
     };
 
     const downloadFile = () => {
-        window.location.href="https://docs.google.com/document/d/1n-tPFmSOjr8cUECOtYxSO2hdJiFesNsfgQl90tLT-R0/export?format=pdf"
+        // window.location.href="https://docs.google.com/document/d/1n-tPFmSOjr8cUECOtYxSO2hdJiFesNsfgQl90tLT-R0/export?format=pdf"
+        window.location.href="https://docs.google.com/document/d/160qpFKuB-87S46_RKCqktfb_myLrBSIA/export?format=pdf"
     }
 
     const styles = {
@@ -46,7 +47,8 @@ export const Resume = () => {
         <div style={styles.background}>
             <Container>
                 <div style={styles.text}>
-                    <Iframe src="https://docs.google.com/document/d/e/2PACX-1vTxNhQjKHQSrB3nJLq3zXaXEGgjzJvrJWjbm1PA1T2U6nQ0f3lSMLYFs1JZi4cVXM7UqQ8e4YiEV-Ol/pub?embedded=true" title="Resume" width='70%' height="900px" marginHeight="0"></Iframe>
+                    {/* https://docs.google.com/document/d/e/2PACX-1vTxNhQjKHQSrB3nJLq3zXaXEGgjzJvrJWjbm1PA1T2U6nQ0f3lSMLYFs1JZi4cVXM7UqQ8e4YiEV-Ol/pub?embedded=true */}
+                    <Iframe src="https://docs.google.com/document/d/e/2PACX-1vSNHE_dJa_eO-lYSeqhEMFl9M7lGpanZl4MX63QiBh3df93PvZ5vc7MYgPJLjMWbw/pub?embedded=true" title="Resume" width='70%' height="900px" marginHeight="0"></Iframe>
                 </div>
                 <FloatingLabel style={styles.flexDisplay}>
                             <Button style={{ ...styles.btn, ...styles.hover }} onMouseEnter={handleHoverIn} onMouseLeave={handleHoverOut} onClick={downloadFile} as="input" type="submit" value="Download my Resume" />
