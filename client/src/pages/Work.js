@@ -1,11 +1,5 @@
-import { Container, Carousel } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
-import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
-
-import meetIO from "../images/MeetIOProject.png";
-import yodaTranslate from "../images/YodaProject.png";
-import glazedAndConfused from "../images/GlazedAndConfused.png"
+import { Container } from "react-bootstrap";
+import ProjectList from "../components/ProjectList";
 
 import { QUERY_PROJECTS } from "../utils/queries";
 import { useQuery } from "@apollo/client";
@@ -17,12 +11,12 @@ export const Work = () => {
       height: "100vh",
     },
     text: {
-        color: "white",
-        textAlign: "center",
-        fontSize: "25px",
+      color: "white",
+      textAlign: "center",
+      fontSize: "25px",
     },
     alignment: {
-        fontSize: "20px"
+      fontSize: "20px"
     },
     card: {
       width: "50%",
@@ -38,14 +32,14 @@ export const Work = () => {
       paddingRight: "5px",
     },
     footer: {
-        display: 'flex',
-        justifyContent: 'center',
+      display: 'flex',
+      justifyContent: 'center',
     },
     containerStyle: {
-        border: '2px groove',
-        borderRadius: '10px',
-        padding: '10px',
-        boxShadow: '3px 3px 12px 8px #d8b65c'
+      border: '2px groove',
+      borderRadius: '10px',
+      padding: '10px',
+      boxShadow: '3px 3px 12px 8px #d8b65c'
     },
     caption: {
       marginBottom: '160px',
@@ -60,11 +54,15 @@ export const Work = () => {
 
   const { data } = useQuery(QUERY_PROJECTS);
   const projects = data?.projects || [];
-  
+
+  console.log(useQuery(QUERY_PROJECTS))
   return (
     <div style={styles.background}>
       <Container>
-        <Carousel style={styles.containerStyle}>
+          <ProjectList
+            projects={projects}
+          />
+        {/* <Carousel style={styles.containerStyle}>
           <Carousel.Item >
             <img
               className="d-block w-100"
@@ -182,7 +180,7 @@ export const Work = () => {
               </div>
             </Carousel.Caption>
           </Carousel.Item>
-        </Carousel>
+        </Carousel> */}
       </Container>
     </div>
   );

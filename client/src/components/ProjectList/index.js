@@ -1,12 +1,10 @@
 import React from 'react'
-import { Container, Carousel } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 
-const ProjectList = ({
-    projects
-}) => {
+const ProjectList = ({ projects }) => {
     const styles = {
         background: {
             backgroundColor: "#212529",
@@ -54,53 +52,54 @@ const ProjectList = ({
         }
     };
 
+    console.log(projects)
     if (!projects.length) {
         return <h3>No projects yet. Go make something!</h3>
     }
 
     return (
-        <Carousel.Item >
-            <img
-                className="d-block w-100"
-                src={yodaTranslate}
-                alt="First slide"
-                style={styles.cardPanel}
-            />
-            <h5 style={styles.text}>Yoda Translate Application</h5>
-            <hr style={styles.text}></hr>
-            <p style={styles.text}>
-                This unique application utilizes two API's that when combined,
-                produce an inspirational quote from the widely known character,
-                Yoda!
-            </p>
-            <Carousel.Caption style={styles.caption}>
-                <div style={styles.footer}>
-                    <a
-                        href="https://github.com/Morralytics/Yoda-Translator"
-                        rel="noreferrer"
-                        target="_blank"
-                    >
-                        <FontAwesomeIcon
-                            icon={faSquareGithub}
-                            size='3x'
-                            style={styles.linkLogo}
-                        />
-                    </a>
-                    {' '}
-                    <a
-                        href="https://meetio-workspace.herokuapp.com/"
-                        rel="noreferrer"
-                        target="_blank"
-                    >
-                        <FontAwesomeIcon
-                            icon={faSquareArrowUpRight}
-                            size="3x"
-                            style={styles.linkLogo}
-                        />
-                    </a>
-                </div>
-            </Carousel.Caption>
-        </Carousel.Item>
+        <Carousel style={styles.containerStyle}>
+            {projects && projects.map((project) => (
+                <Carousel.Item >
+                <img
+                    className="d-block w-100"
+                    src={project.image}
+                    alt={project.title}
+                    style={styles.cardPanel}
+                />
+                <h5 style={styles.text}>{project.title}</h5>
+                <hr style={styles.text}></hr>
+                <p style={styles.text}>{project.content}</p>
+                <Carousel.Caption style={styles.caption}>
+                    <div style={styles.footer}>
+                        <a
+                            href={project.gitHubUrl}
+                            rel="noreferrer"
+                            target="_blank"
+                        >
+                            <FontAwesomeIcon
+                                icon={faSquareGithub}
+                                size='3x'
+                                style={styles.linkLogo}
+                            />
+                        </a>
+                        {' '}
+                        <a
+                            href={project.liveUrl}
+                            rel="noreferrer"
+                            target="_blank"
+                        >
+                            <FontAwesomeIcon
+                                icon={faSquareArrowUpRight}
+                                size="3x"
+                                style={styles.linkLogo}
+                            />
+                        </a>
+                    </div>
+                </Carousel.Caption>
+            </Carousel.Item>
+            ))}
+        </Carousel>
     )
 }
 
