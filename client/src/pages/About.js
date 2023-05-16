@@ -53,7 +53,7 @@ export const About = () => {
                 <br></br>
                 <div style={{ ...styles.text, ...styles.cardStyle }}>
                     <Card style={styles.imgStyle}>
-                        <Card.Img variant="top" src="/Bridge.JPEG" />
+                        <Card.Img variant="top" src="images/Bridge.JPEG" />
                         <Card.Body>
                             <Card.Title>Forward onto Freedom</Card.Title>
                             <Card.Text>
@@ -62,7 +62,7 @@ export const About = () => {
                         </Card.Body>
                     </Card>
                     <Card style={styles.imgStyle}>
-                        <Card.Img variant="top" src="/Car.JPEG" />
+                        <Card.Img variant="top" src="images/Car.JPEG" />
                         <Card.Body>
                             <Card.Title>Midnight Strider</Card.Title>
                             <Card.Text>
@@ -71,7 +71,7 @@ export const About = () => {
                         </Card.Body>
                     </Card>
                     <Card style={styles.imgStyle}>
-                        <Card.Img variant="top" src="/Water.JPEG" />
+                        <Card.Img variant="top" src="images/Water.JPEG" />
                         <Card.Body>
                             <Card.Title>Rapid Growth</Card.Title>
                             <Card.Text>
