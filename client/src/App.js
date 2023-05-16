@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
@@ -6,7 +12,16 @@ import { Work } from "./pages/Work";
 import { Resume } from "./pages/Resume";
 
 import Header from "./components/ui/Header"
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+
+const client = new ApolloClient({
+  cache: new InMemoryCache(),
+})
+
 
 function App() {
   return (
