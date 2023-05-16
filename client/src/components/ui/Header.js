@@ -8,8 +8,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 
-import logo from '../../images/MainLogo.png';
-
 const Header = () => {
   const styles= {
     linkLogoColor: {
@@ -21,7 +19,7 @@ const Header = () => {
       <Container>
         <Link to='/' className='navbar-brand'>
           <img
-            src={logo}
+            src="images/MainLogo.png"
             width='75'
             height='60'
             className='d-inline-block align-top'

@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import ProfilePicure from "../images/ProfilePicture.jpg";
 
 export const Home = () => {
     const styles = {
@@ -45,7 +44,7 @@ export const Home = () => {
                 <div style={styles.imgAlign}>
                     <img
                         className="d-block w-100 img-fluid rounded-circle"
-                        src={ProfilePicure}
+                        src="images/ProfilePicture.jpg"
                         alt="Profile"
                         style={styles.imgStyle}
                     />

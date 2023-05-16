@@ -63,7 +63,7 @@ const ProjectList = ({ projects }) => {
                 <Carousel.Item >
                 <img
                     className="d-block w-100"
-                    src={project.image}
+                    src={`images/${project.image}`}
                     alt={project.title}
                     style={styles.cardPanel}
                 />

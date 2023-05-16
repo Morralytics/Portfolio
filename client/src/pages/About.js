@@ -1,8 +1,5 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
-import Bridge from '../images/Bridge.JPEG';
-import Car from '../images/Car.JPEG';
-import Water from '../images/Water.JPEG';
 
 export const About = () => {
     const styles = {
@@ -56,7 +53,7 @@ export const About = () => {
                 <br></br>
                 <div style={{ ...styles.text, ...styles.cardStyle }}>
                     <Card style={styles.imgStyle}>
-                        <Card.Img variant="top" src={Bridge} />
+                        <Card.Img variant="top" src="/Bridge.JPEG" />
                         <Card.Body>
                             <Card.Title>Forward onto Freedom</Card.Title>
                             <Card.Text>
@@ -65,7 +62,7 @@ export const About = () => {
                         </Card.Body>
                     </Card>
                     <Card style={styles.imgStyle}>
-                        <Card.Img variant="top" src={Car} />
+                        <Card.Img variant="top" src="/Car.JPEG" />
                         <Card.Body>
                             <Card.Title>Midnight Strider</Card.Title>
                             <Card.Text>
@@ -74,7 +71,7 @@ export const About = () => {
                         </Card.Body>
                     </Card>
                     <Card style={styles.imgStyle}>
-                        <Card.Img variant="top" src={Water} />
+                        <Card.Img variant="top" src="/Water.JPEG" />
                         <Card.Body>
                             <Card.Title>Rapid Growth</Card.Title>
                             <Card.Text>
