@@ -7,6 +7,9 @@ import meetIO from "../images/MeetIOProject.png";
 import yodaTranslate from "../images/YodaProject.png";
 import glazedAndConfused from "../images/GlazedAndConfused.png"
 
+import { QUERY_PROJECTS } from "../utils/queries";
+import { useQuery } from "@apollo/client";
+
 export const Work = () => {
   const styles = {
     background: {
@@ -54,6 +57,10 @@ export const Work = () => {
       marginBottom: '110px'
     }
   };
+
+  const { data } = useQuery(QUERY_PROJECTS);
+  const projects = data?.projects || [];
+  
   return (
     <div style={styles.background}>
       <Container>
