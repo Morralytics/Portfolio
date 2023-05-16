@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Glazed & Confused",
+        "content": "An application that is designed for a flavorful and new Donut Shop that takes the user through a fantastic donut shopping experience!",
+        "image": "GlazedAndConfused.png",
+        "liveUrl": "https://glazed-and-confused-app.herokuapp.com/",
+        "gitHubUrl": "https://github.com/Morralytics/Glazed-and-Confused"
+    },
+    {
+        "title": "Meet-IO Workplace Application",
+        "content": "An application that is designed for any team/family/or simply someone with a busy schedule to track what they need to get done and with whom via a live chat function utilzing websockets!",
+        "image": "MeetIOProject.png",
+        "liveUrl": "https://meetio-workspace.herokuapp.com/",
+        "gitHubUrl": "https://github.com/Morralytics/Meet-IO"
+    },
+    {
+        "title": "Yoda Translate Application",
+        "content": "This unique application utilizes two API's that when combined, produce an inspirational quote from the widely known character, Yoda!",
+        "image": "YodaProject.jpg",
+        "liveUrl": "https://morralytics.github.io/Yoda-Translator/",
+        "gitHubUrl": "https://github.com/Morralytics/Yoda-Translator"
+    }
+]

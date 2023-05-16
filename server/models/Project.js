@@ -13,14 +13,17 @@ const projectSchema = new Schema({
     },
     image: {
         type: String,
+        required: true,
         trim: true,
     },
     liveUrl: {
         type: String,
+        required: true,
         trim: true,
     },
     gitHubUrl: {
         type: String,
+        required: true,
         trim: true,
     },
 });
