@@ -12,6 +12,7 @@ import { Work } from "./pages/Work";
 import { Resume } from "./pages/Resume";
 
 import Header from "./components/ui/Header"
+import Footer from "./components/ui/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const httpLink = createHttpLink({
@@ -35,6 +36,7 @@ function App() {
           <Route path='/Work' element={<Work />} />
           <Route path='/Resume' element={<Resume />} />
         </Routes>
+        <Footer />
       </Router>
     </ApolloProvider>
   );

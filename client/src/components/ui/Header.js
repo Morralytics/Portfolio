@@ -12,10 +12,14 @@ const Header = () => {
   const styles= {
     linkLogoColor: {
       color: '#1E3050'
+    },
+    bgDarkCustom: {
+      backgroundColor: '#212529',
+      boxShadow: 'none'
     }
   }
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" variant="dark" style={styles.bgDarkCustom}>
       <Container>
         <Link to='/' className='navbar-brand'>
           <img
