@@ -1,7 +1,7 @@
 const db = require('../config/connection');
 const { Project, Photograph } = require('../models');
 const projectSeeds = require('./projectSeeds.json');
-const photographSeeds = require('./Seeds.json');
+const photographSeeds = require('./photographSeeds.json');
 
 db.once('open', async() => {
     try {
@@ -15,6 +15,6 @@ db.once('open', async() => {
         process.exit(1);
     }
 
-    console.log('Seeded project data.')
+    console.log('Seeded portfolio data.')
     process.exit(0);
 });

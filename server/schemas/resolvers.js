@@ -5,7 +5,7 @@ const resolvers = {
         projects: async () => {
             return Project.find()
         },
-        photographys: async () => {
+        photographs: async () => {
             return Photograph.find()
         }
     },
