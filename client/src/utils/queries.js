@@ -12,3 +12,14 @@ query getProjects {
     }
   }
 `;
+
+export const QUERY_PHOTOGRAPHS = gql`
+query getPhotographs {
+  photographs {
+    _id
+    title
+    content
+    image
+  }
+}
+`;

@@ -1,16 +1,15 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
 
+import { QUERY_PHOTOGRAPHS } from "../utils/queries";
+import { useQuery } from "@apollo/client";
+import PhotoList from "../components/PhotoList";
+
 export const About = () => {
     const styles = {
         background: {
             backgroundColor: '#212529',
             height: '100vh'
-        },
-        text: {
-            color: 'black',
-            textAlign: 'center',
-            fontFamily: 'Open Sans',
         },
         textHeader: {
             color: 'white',
@@ -20,10 +19,6 @@ export const About = () => {
             width: '50%',
             marginLeft: "auto",
             marginRight: "auto",
-        },
-        cardStyle: {
-            display: 'flex',
-            gap: '30px',
         },
         secondaryText: {
             color: 'white',
@@ -38,10 +33,11 @@ export const About = () => {
             lineHeight: '30px',
             listStyleType: 'none',
         },
-        imgStyle: {
-            boxShadow: '3px 3px 12px 8px #d8b65c'
-        },
-    }
+    };
+
+    const { data } = useQuery(QUERY_PHOTOGRAPHS);
+    const photographs = data?.projects || [];
+
     return (
         <div style={styles.background}>
             <Container style={styles.background}>
@@ -51,35 +47,9 @@ export const About = () => {
                     </p>
                 </div>
                 <br></br>
-                <div style={{ ...styles.text, ...styles.cardStyle }}>
-                    <Card style={styles.imgStyle}>
-                        <Card.Img variant="top" src="images/Bridge.JPEG" />
-                        <Card.Body>
-                            <Card.Title>Forward onto Freedom</Card.Title>
-                            <Card.Text>
-                                Taken off the Oregon Coast during a trip not planned
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card style={styles.imgStyle}>
-                        <Card.Img variant="top" src="images/Car.JPEG" />
-                        <Card.Body>
-                            <Card.Title>Midnight Strider</Card.Title>
-                            <Card.Text>
-                                Car fanatic taken locally in Bend Oregon
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card style={styles.imgStyle}>
-                        <Card.Img variant="top" src="images/Water.JPEG" />
-                        <Card.Body>
-                            <Card.Title>Rapid Growth</Card.Title>
-                            <Card.Text>
-                                Beautiful river hiding from those unfamiliar with Central Oregon
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </div>
+                <PhotoList 
+                    photographs={photographs}
+                />
                 <br></br>
                 <div style={styles.secondaryText}>
                     <p>
