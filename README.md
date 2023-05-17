@@ -9,7 +9,9 @@
 
 This application was created to display my the projects I have completted as well as share a little bit about myself as I enter the job market as a Full Stack Engineer. My portfolio page shows not only projects I am proud of but a bit of insight on myself and the branding I have chosen. This is an ever evolving portfolio however, I am exited to show everyone what I am capable of.
 
-  ## Table of Contents
+![Landing page](./client/public/images/LandingPage.png)
+
+## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits & Technologies](#credits)
@@ -18,7 +20,7 @@ This application was created to display my the projects I have completted as wel
 ## Installation 
 
 Github repository: https://github.com/Morralytics/Portfolio <br />
-Live Portfolio deployment: https://morralyticsportfolio.netlify.app/
+Live Portfolio deployment: https://morralytics-portfolio.herokuapp.com/
 
 ## Usage
 Enjoy the creative process behind my portfolio and stay in touch with new developments and knowledge on Web Development.
