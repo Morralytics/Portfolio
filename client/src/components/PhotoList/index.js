@@ -1,4 +1,5 @@
 import React from 'react'
+import { Card } from 'react-bootstrap'
 
 const PhotoList = ({ photographs }) => {
     const styles = {
@@ -18,15 +19,15 @@ const PhotoList = ({ photographs }) => {
 
     return (
         <div style={{ ...styles.text, ...styles.cardStyle }}>
-            <Card style={styles.imgStyle}>
-                <Card.Img variant="top" src="images/Bridge.JPEG" />
-                <Card.Body>
-                    <Card.Title>Forward onto Freedom</Card.Title>
-                    <Card.Text>
-                        Taken off the Oregon Coast during a trip not planned
-                    </Card.Text>
-                </Card.Body>
-            </Card>
+            {photographs && photographs.map((photograph) => (
+                <Card style={styles.imgStyle} key={photograph.id}>
+                    <Card.Img variant="top" src={`images/${photograph.image}`} />
+                    <Card.Body>
+                        <Card.Title>{photograph.title}</Card.Title>
+                        <Card.Text>{photograph.content}</Card.Text>
+                    </Card.Body>
+                </Card>
+            ))}
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 import { QUERY_PHOTOGRAPHS } from "../utils/queries";
 import { useQuery } from "@apollo/client";
@@ -36,8 +36,9 @@ export const About = () => {
     };
 
     const { data } = useQuery(QUERY_PHOTOGRAPHS);
-    const photographs = data?.projects || [];
+    const photographs = data?.photographs || [];
 
+    console.log(photographs)
     return (
         <div style={styles.background}>
             <Container style={styles.background}>
