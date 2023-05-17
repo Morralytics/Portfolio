@@ -1,4 +1,4 @@
 const Project = require('./Project');
-const Photography = require('./Photography');
+const Photograph = require('./Photograph');
 
-module.exports = { Project, Photography };
+module.exports = { Project, Photograph };

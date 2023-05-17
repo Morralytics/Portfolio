@@ -1,14 +1,14 @@
 const db = require('../config/connection');
-const { Project, Photography } = require('../models');
+const { Project, Photograph } = require('../models');
 const projectSeeds = require('./projectSeeds.json');
-const photographySeeds = require('./photographySeeds.json');
+const photographSeeds = require('./Seeds.json');
 
 db.once('open', async() => {
     try {
         await Project.deleteMany({});
-        await Photography.deleteMany({});
+        await Photograph.deleteMany({});
 
-        await Photography.create(photographySeeds)
+        await Photograph.create(photographSeeds)
         await Project.create(projectSeeds);
     } catch (err) {
         console.error(err);

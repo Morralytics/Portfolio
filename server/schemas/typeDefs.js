@@ -10,8 +10,16 @@ const typeDefs = gql`
         gitHubUrl: String!
     }
 
+    type Photograph {
+        _id: ID
+        title: String!
+        content: String!
+        image: String!
+    }
+
     type Query {
         projects: [Project]
+        photographs: [Photograph]
     }
 `
 
