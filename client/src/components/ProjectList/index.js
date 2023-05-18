@@ -39,7 +39,9 @@ const ProjectList = ({ projects }) => {
             border: '2px groove',
             borderRadius: '10px',
             padding: '10px',
-            boxShadow: '3px 3px 12px 8px #d8b65c'
+            boxShadow: '3px 3px 12px 8px #d8b65c',
+            width: '80%',
+            margin: 'auto'
         },
         caption: {
             marginBottom: '160px',
@@ -61,43 +63,43 @@ const ProjectList = ({ projects }) => {
         <Carousel style={styles.containerStyle}>
             {projects && projects.map((project) => (
                 <Carousel.Item >
-                <img
-                    className="d-block w-100"
-                    src={`images/${project.image}`}
-                    alt={project.title}
-                    style={styles.cardPanel}
-                />
-                <h5 style={styles.text}>{project.title}</h5>
-                <hr style={styles.text}></hr>
-                <p style={styles.text}>{project.content}</p>
-                <Carousel.Caption style={styles.caption}>
-                    <div style={styles.footer}>
-                        <a
-                            href={project.gitHubUrl}
-                            rel="noreferrer"
-                            target="_blank"
-                        >
-                            <FontAwesomeIcon
-                                icon={faSquareGithub}
-                                size='3x'
-                                style={styles.linkLogo}
-                            />
-                        </a>
-                        {' '}
-                        <a
-                            href={project.liveUrl}
-                            rel="noreferrer"
-                            target="_blank"
-                        >
-                            <FontAwesomeIcon
-                                icon={faSquareArrowUpRight}
-                                size="3x"
-                                style={styles.linkLogo}
-                            />
-                        </a>
-                    </div>
-                </Carousel.Caption>
-            </Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={`images/${project.image}`}
+                        alt={project.title}
+                        style={styles.cardPanel}
+                    />
+                    <h5 style={styles.text}>{project.title}</h5>
+                    <hr style={styles.text}></hr>
+                    <p style={styles.text}>{project.content}</p>
+                    <Carousel.Caption style={styles.caption}>
+                        <div style={styles.footer}>
+                            <a
+                                href={project.gitHubUrl}
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <FontAwesomeIcon
+                                    icon={faSquareGithub}
+                                    size='3x'
+                                    style={styles.linkLogo}
+                                />
+                            </a>
+                            {' '}
+                            <a
+                                href={project.liveUrl}
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <FontAwesomeIcon
+                                    icon={faSquareArrowUpRight}
+                                    size="3x"
+                                    style={styles.linkLogo}
+                                />
+                            </a>
+                        </div>
+                    </Carousel.Caption>
+                </Carousel.Item>
             ))}
         </Carousel>
     )
