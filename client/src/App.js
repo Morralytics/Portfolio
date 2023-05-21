@@ -14,6 +14,7 @@ import { Resume } from "./pages/Resume";
 import Header from "./components/ui/Header"
 import Footer from "./components/ui/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import './index.css'
 
 const httpLink = createHttpLink({
   uri: '/graphql',

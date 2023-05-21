@@ -22,3 +22,20 @@ code {
 .hoverText {
   cursor: pointer;
 }
+
+@media (min-width: 1024px) {
+  #textWelcome,
+  #textDescription {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans';
+  }
+
+  #textWelcome {
+    font-size: 50px;
+  }
+
+  #textDescription {
+    font-size: 25px;
+  }
+}

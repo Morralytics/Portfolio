@@ -7,19 +7,6 @@ export const Home = () => {
             backgroundColor: '#212529',
             height: '100vh'
         },
-        textAlign: {
-            textAlign: 'center',
-        },
-        textStyle: {
-            color: 'white',
-            fontFamily: 'Open Sans',
-        },
-        textHeader: {
-            fontSize: "50px",
-        },
-        textContent: {
-            fontSize: "25px",
-        },
         imgAlign: {
             width: "40%",
             marginLeft: "auto",
@@ -35,7 +22,7 @@ export const Home = () => {
     return (
         <div style={styles.background}>
             <Container>
-                <div style={{...styles.textAlign, ...styles.textStyle, ...styles.textHeader}}>
+                <div id="textWelcome" style={{...styles.textAlign, ...styles.textStyle, ...styles.textHeader}}>
                     <p>
                         Hello and welcome!
                     </p>
@@ -49,7 +36,7 @@ export const Home = () => {
                         style={styles.imgStyle}
                     />
                 </div>
-                <div style={{...styles.textAlign, ...styles.textStyle, ...styles.textContent}}>
+                <div id="textDescription" style={{...styles.textAlign, ...styles.textStyle, ...styles.textContent}}>
                     <br></br>
                     <p>
                         My name is Nick Morris
