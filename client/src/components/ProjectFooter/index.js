@@ -22,7 +22,7 @@ const ProjectFooter = () => {
     return (
         <MDBFooter className='text-center text-white' style={{ ...styles.placement, ...styles.bgDarkCustom }}>
             <MDBContainer className='p-1 pb-0'>
-                <section className='mb-3 mt-2'>
+                <section className='mb-5 mt-2'>
                     <MDBBtn outline size="lg" color="light" floating className='mx-3' href='mailto:nicholasmorris2599@gmail.com' role='button' title="Gmail">
                         <MDBIcon fab icon='google' size="lg" />
                     </MDBBtn>

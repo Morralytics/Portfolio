@@ -29,7 +29,7 @@ const ProjectList = ({ projects }) => {
             borderRadius: '5px'
         },
         linkLogo: {
-            color: "#1E3050",
+            color: "white",
             paddingRight: "5px",
         },
         footer: {
@@ -41,7 +41,7 @@ const ProjectList = ({ projects }) => {
             borderRadius: '10px',
             padding: '10px',
             boxShadow: '3px 3px 12px 8px #d8b65c',
-            width: '80%',
+            width: '75%',
             margin: 'auto'
         },
         caption: {
@@ -71,36 +71,37 @@ const ProjectList = ({ projects }) => {
                             alt={project.title}
                             style={styles.cardPanel}
                         />
+                        <br></br>
                         <h5 style={styles.text}>{project.title}</h5>
                         <hr style={styles.text}></hr>
                         <p style={styles.text}>{project.content}</p>
-                        <Carousel.Caption style={styles.caption}>
-                            <div style={styles.footer}>
-                                <a
-                                    href={project.gitHubUrl}
-                                    rel="noreferrer"
-                                    target="_blank"
-                                >
-                                    <FontAwesomeIcon
-                                        icon={faSquareGithub}
-                                        size='3x'
-                                        style={styles.linkLogo}
-                                    />
-                                </a>
-                                {' '}
-                                <a
-                                    href={project.liveUrl}
-                                    rel="noreferrer"
-                                    target="_blank"
-                                >
-                                    <FontAwesomeIcon
-                                        icon={faSquareArrowUpRight}
-                                        size="3x"
-                                        style={styles.linkLogo}
-                                    />
-                                </a>
-                            </div>
-                        </Carousel.Caption>
+                        <div style={styles.footer}>
+                            <a
+                                href={project.gitHubUrl}
+                                title='GitHub Repository'
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <FontAwesomeIcon
+                                    icon={faSquareGithub}
+                                    size='3x'
+                                    style={styles.linkLogo}
+                                />
+                            </a>
+                            {' '}
+                            <a
+                                href={project.liveUrl}
+                                title='Live application'
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <FontAwesomeIcon
+                                    icon={faSquareArrowUpRight}
+                                    size="3x"
+                                    style={styles.linkLogo}
+                                />
+                            </a>
+                        </div>
                         <br></br>
                     </Carousel.Item>
                 ))}

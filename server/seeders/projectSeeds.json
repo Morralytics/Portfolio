@@ -15,7 +15,7 @@
     },
     {
         "title": "Meet-IO Workplace Application",
-        "content": "An application that is designed for any team/family/or simply someone with a busy schedule to track what they need to get done and with whom via a live chat function utilzing websockets!",
+        "content": "Meet-IO is an application rooted to help assist anyone who struggles to keep their plans with family or their work schedule correctly planned.",
         "image": "MeetIOProject.png",
         "liveUrl": "https://meetio-workspace.herokuapp.com/",
         "gitHubUrl": "https://github.com/Morralytics/Meet-IO"
