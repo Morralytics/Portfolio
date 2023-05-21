@@ -19,10 +19,6 @@ code {
   --yellow: #d8b65c;
 }
 
-.hoverText {
-  cursor: pointer;
-}
-
 /* Desktop/Laptop */
 @media (min-width: 1024px) {
   #textWelcome,
@@ -41,12 +37,56 @@ code {
   }
 }
 
+@media (max-width: 1024px) {
+  #textWelcome,
+  #textDescription {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans';
+  }
+
+  #textWelcome {
+    font-size: 50px;
+  }
+
+  #textDescription {
+    font-size: 25px;
+  }
+}
+
 /* Tablet */
 @media (max-width: 768px) {
-  
+  #textWelcome,
+  #textDescription {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans';
+  }
+
+   #textWelcome {
+    font-size: 35px;
+  }
+
+  #textDescription {
+    font-size: 18px;
+  }
+
 }
 
 /* Mobile */
 @media (max-width: 425px) {
- 
+  #textWelcome,
+  #textDescription {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans';
+  }
+
+   #textWelcome {
+    font-size: 30px;
+  }
+
+  #textDescription {
+    font-size: 15px;
+  }
 }
