@@ -49,6 +49,12 @@ code {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .projectText {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -71,6 +77,12 @@ code {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .projectText {
+    font-size: 25px;
+    color: white;
+    text-align: center;
   }
 }
 
@@ -96,6 +108,21 @@ code {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .projectText {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+
+  #gitHub,
+  #linkedIn {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Mobile */
@@ -117,6 +144,27 @@ code {
 
   #profilePicture {
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .projectText {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+  }
+
+  #gitHub,
+  #linkedIn {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #projectRuler {
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }

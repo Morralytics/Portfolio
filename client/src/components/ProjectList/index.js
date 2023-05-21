@@ -11,11 +11,6 @@ const ProjectList = ({ projects }) => {
             backgroundColor: "#212529",
             height: "100vh",
         },
-        text: {
-            color: "white",
-            textAlign: "center",
-            fontSize: "25px",
-        },
         alignment: {
             fontSize: "20px"
         },
@@ -75,9 +70,9 @@ const ProjectList = ({ projects }) => {
                             style={styles.cardPanel}
                         />
                         <br></br>
-                        <h5 style={styles.text}>{project.title}</h5>
-                        <hr style={styles.text}></hr>
-                        <p style={styles.text}>{project.content}</p>
+                        <h5 className='projectText' style={styles.text}>{project.title}</h5>
+                        <hr id='projectRuler' className='projectText' style={styles.text}></hr>
+                        <p className='projectText' style={styles.text}>{project.content}</p>
                         <div style={styles.footer}>
                             <a
                                 href={project.gitHubUrl}
@@ -86,6 +81,7 @@ const ProjectList = ({ projects }) => {
                                 target="_blank"
                             >
                                 <FontAwesomeIcon
+                                    id='gitHub'
                                     icon={faSquareGithub}
                                     size='3x'
                                     style={styles.linkLogo}
@@ -99,6 +95,7 @@ const ProjectList = ({ projects }) => {
                                 target="_blank"
                             >
                                 <FontAwesomeIcon
+                                    id='linkedIn'
                                     icon={faSquareArrowUpRight}
                                     size="3x"
                                     style={styles.linkLogo}

@@ -10,11 +10,6 @@ export const Work = () => {
       backgroundColor: "#212529",
       height: "100vh",
     },
-    text: {
-      color: "white",
-      textAlign: "center",
-      fontSize: "25px",
-    },
     alignment: {
       fontSize: "20px"
     },
