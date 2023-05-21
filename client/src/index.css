@@ -23,6 +23,7 @@ code {
   cursor: pointer;
 }
 
+/* Desktop/Laptop */
 @media (min-width: 1024px) {
   #textWelcome,
   #textDescription {
@@ -38,4 +39,14 @@ code {
   #textDescription {
     font-size: 25px;
   }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  
+}
+
+/* Mobile */
+@media (max-width: 425px) {
+ 
 }
