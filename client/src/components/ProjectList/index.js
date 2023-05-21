@@ -44,6 +44,9 @@ const ProjectList = ({ projects }) => {
             width: '75%',
             margin: 'auto'
         },
+        carouselControl : {
+            backgroundImage: 'none',
+        },
         caption: {
             marginBottom: '160px',
         },

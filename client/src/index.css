@@ -19,6 +19,14 @@ code {
   --yellow: #d8b65c;
 }
 
+.carousel-control-next-icon::after {
+  display: none;
+}
+
+.carousel-control-prev-icon::after {
+  display: none;
+}
+
 /* Desktop/Laptop */
 @media (min-width: 1024px) {
   #textWelcome,
