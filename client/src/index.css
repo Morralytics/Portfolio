@@ -35,6 +35,12 @@ code {
   #textDescription {
     font-size: 25px;
   }
+
+  #profilePicture {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -51,6 +57,12 @@ code {
 
   #textDescription {
     font-size: 25px;
+  }
+
+  #profilePicture {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -71,6 +83,11 @@ code {
     font-size: 18px;
   }
 
+  #profilePicture {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Mobile */
@@ -88,5 +105,26 @@ code {
 
   #textDescription {
     font-size: 15px;
+  }
+
+  #profilePicture {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .technology  {
+    width: 50px;
+    margin-left: -5px;
+  }
+
+  .mb-3 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mt-2 {
+    display: flex;
+    justify-content: space-around;
   }
 }

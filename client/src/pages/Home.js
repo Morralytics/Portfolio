@@ -8,11 +8,6 @@ export const Home = () => {
             backgroundColor: '#212529',
             height: '100vh'
         },
-        imgAlign: {
-            width: "40%",
-            marginLeft: "auto",
-            marginRight: "auto",
-        },
         imgStyle: {
             border: '2px groove',
             borderRadius: '10px',
@@ -29,9 +24,10 @@ export const Home = () => {
                     </p>
                 </div>
                 <br></br>
-                <div style={styles.imgAlign}>
+                <div id="profilePicture" style={styles.imgAlign}>
                     <img
                         className="d-block w-100 img-fluid rounded-circle"
+                        
                         src="images/ProfilePicture.jpg"
                         alt="Profile"
                         style={styles.imgStyle}

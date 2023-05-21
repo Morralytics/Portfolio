@@ -38,31 +38,28 @@ const Footer = () => {
             <MDBContainer className='p-1 pb-0'>
                 <section className='mb-3 mt-2'>
                     <a href="" title="JavaScript">
-                        <MDBIcon className='p-2 hoverText' fab href='#' icon="js-square" size="3x" color="white" />
+                        <MDBIcon className='p-2 technology' fab href='#' icon="js-square" size="3x" color="white" />
                     </a>
                     <a href="" title="HTML5">
-                        <MDBIcon className='p-2' fab icon="html5" size="3x" color="white"/>
+                        <MDBIcon className='p-2 technology' fab icon="html5" size="3x" color="white"/>
                     </a>
                     <a href="" title="CSS3">
-                        <MDBIcon className='p-2' fab icon="css3-alt" size="3x" color="white" />
-                    </a>
-                    <a href="" title="Figma">
-                        <MDBIcon className='p-2' fab icon="figma" size="3x" color="white" />
+                        <MDBIcon className='p-2 technology' fab icon="css3-alt" size="3x" color="white" />
                     </a>
                     <a href="" title="Python">
-                        <MDBIcon className='p-2' fab icon="python" size="3x" color="white" />
+                        <MDBIcon className='p-2 technology' fab icon="python" size="3x" color="white" />
                     </a>
                     <a href="" title="React.js">
-                        <MDBIcon className='p-2' fab icon="react" size="3x" color="white" />
+                        <MDBIcon className='p-2 technology' fab icon="react" size="3x" color="white" />
                     </a>
                     <a href="" title="Node.js">
-                        <MDBIcon className='p-2' fab icon="node" size="3x" color="white" />
+                        <MDBIcon className='p-2 technology' fab icon="node" size="3x" color="white" />
                     </a>
                     <a href="" title="SQL">
-                        <MDBIcon className='p-2' fas icon="database" size="3x" color="white" />
+                        <MDBIcon className='p-2 technology' fas icon="database" size="3x" color="white" />
                     </a>
                     <a href="" title="AWS">
-                        <MDBIcon className='p-2' fab icon="aws" size="3x" color="white" />
+                        <MDBIcon className='p-2 technology' fab icon="aws" size="3x" color="white" />
                     </a>
                 </section>
             </MDBContainer>
