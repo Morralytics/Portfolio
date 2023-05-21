@@ -37,7 +37,6 @@ function App() {
           <Route path='/Work' element={<Work />} />
           <Route path='/Resume' element={<Resume />} />
         </Routes>
-        <Footer />
       </Router>
     </ApolloProvider>
   );

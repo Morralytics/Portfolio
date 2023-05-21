@@ -1,10 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     MDBFooter,
     MDBContainer,
-    MDBCol,
-    MDBRow,
     MDBIcon,
     MDBBtn
 } from 'mdb-react-ui-kit';

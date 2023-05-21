@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/ui/Footer";
 import { Container } from "react-bootstrap";
 
 export const Home = () => {
@@ -45,6 +46,7 @@ export const Home = () => {
                     </p>
                 </div>
             </Container>
+            <Footer />
         </div>
     )
 }

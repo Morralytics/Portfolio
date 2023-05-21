@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectFooter from '../ProjectFooter';
 import { Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
@@ -60,48 +61,52 @@ const ProjectList = ({ projects }) => {
     }
 
     return (
-        <Carousel style={styles.containerStyle}>
-            {projects && projects.map((project) => (
-                <Carousel.Item >
-                    <img
-                        className="d-block w-100"
-                        src={`images/${project.image}`}
-                        alt={project.title}
-                        style={styles.cardPanel}
-                    />
-                    <h5 style={styles.text}>{project.title}</h5>
-                    <hr style={styles.text}></hr>
-                    <p style={styles.text}>{project.content}</p>
-                    <Carousel.Caption style={styles.caption}>
-                        <div style={styles.footer}>
-                            <a
-                                href={project.gitHubUrl}
-                                rel="noreferrer"
-                                target="_blank"
-                            >
-                                <FontAwesomeIcon
-                                    icon={faSquareGithub}
-                                    size='3x'
-                                    style={styles.linkLogo}
-                                />
-                            </a>
-                            {' '}
-                            <a
-                                href={project.liveUrl}
-                                rel="noreferrer"
-                                target="_blank"
-                            >
-                                <FontAwesomeIcon
-                                    icon={faSquareArrowUpRight}
-                                    size="3x"
-                                    style={styles.linkLogo}
-                                />
-                            </a>
-                        </div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            ))}
-        </Carousel>
+        <>
+            <Carousel style={styles.containerStyle}>
+                {projects && projects.map((project) => (
+                    <Carousel.Item >
+                        <img
+                            className="d-block w-100"
+                            src={`images/${project.image}`}
+                            alt={project.title}
+                            style={styles.cardPanel}
+                        />
+                        <h5 style={styles.text}>{project.title}</h5>
+                        <hr style={styles.text}></hr>
+                        <p style={styles.text}>{project.content}</p>
+                        <Carousel.Caption style={styles.caption}>
+                            <div style={styles.footer}>
+                                <a
+                                    href={project.gitHubUrl}
+                                    rel="noreferrer"
+                                    target="_blank"
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faSquareGithub}
+                                        size='3x'
+                                        style={styles.linkLogo}
+                                    />
+                                </a>
+                                {' '}
+                                <a
+                                    href={project.liveUrl}
+                                    rel="noreferrer"
+                                    target="_blank"
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faSquareArrowUpRight}
+                                        size="3x"
+                                        style={styles.linkLogo}
+                                    />
+                                </a>
+                            </div>
+                        </Carousel.Caption>
+                        <br></br>
+                    </Carousel.Item>
+                ))}
+            </Carousel>
+            <ProjectFooter />
+        </>
     )
 }
 
