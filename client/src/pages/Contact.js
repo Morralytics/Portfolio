@@ -40,21 +40,6 @@ export const Contact = () => {
     };
 
     const styles = {
-        background: {
-            backgroundColor: '#212529',
-            height: '100vh',
-            paddingTop: '10%',
-        },
-        containerStyle: {
-            border: '2px groove',
-            borderRadius: '5px',
-            padding: '10px',
-            boxShadow: '3px 3px 12px 8px #45c490'
-        },
-        text: {
-            color: 'white',
-            fontSize: '1.5rem'
-        },
         form: {
             color: 'black',
             textAlign: 'center',
@@ -68,15 +53,18 @@ export const Contact = () => {
             backgroundColor: isHover ? '#45c490' : 'white',
             opacity: isHover ? '.8' : '1',
             boxShadow: isHover ? '2px 2px 25px 1px #45c490' : '',
+        },
+        sides: {
+            width: '80%'
         }
     }
     return (
-        <div style={styles.background}>
-            <Container style={styles.containerStyle}>
+        <div className="contactPage" style={styles.background}>
+            <Container className="contactContainer" style={styles.sides}>
                 <Form ref={form} style={styles.form} onSubmit={sendEmail}>
                     <>
                         <div>
-                            <p style={styles.text}>
+                            <p className="contactText" style={styles.text}>
                                 Leave any comments, questions, or inquiries for collaboration! <br></br>
                                 We are the ones to build our community and participate in the ever evolving Tech Industry! <br></br>
                                 Let's connect!

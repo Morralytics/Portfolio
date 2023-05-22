@@ -98,6 +98,28 @@ code {
     width: 100vw;
     background-color: #212529;
   }
+
+  .contactPage {
+    background-color: #212529;
+    padding-top: 10%;
+    height: 100vh;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contactContainer {
+    border: 2px groove;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 3px 3px 12px 8px #45c490;
+    width: 500px;
+  }
+
+  .contactText {
+    font-size: 20px;
+    color: white;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -168,6 +190,28 @@ code {
   .photographyPage {
     width: 100vw;
     background-color: #212529;
+  }
+
+  .contactPage {
+    background-color: #212529;
+    padding-top: 10%;
+    height: 100vh;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contactContainer {
+    border: 2px groove;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 3px 3px 12px 8px #45c490;
+    width: 500px;
+  }
+
+  .contactText {
+    font-size: 20px;
+    color: white;
   }
 }
 
@@ -256,6 +300,28 @@ code {
   .projectFooter {
     display: none;
   }
+
+  .contactPage {
+    background-color: #212529;
+    padding-top: 10%;
+    height: 100vh;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contactContainer {
+    border: 2px groove;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 3px 3px 12px 8px #45c490;
+    width: 500px;
+  }
+
+  .contactText {
+    font-size: 20px;
+    color: white;
+  }
 }
 
 /* Mobile */
@@ -328,6 +394,27 @@ code {
 
   .projectFooter {
     display: none;
+  }
+
+  .contactPage {
+    background-color: #212529;
+    padding-top: 10%;
+    height: 100vh;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contactContainer {
+    border: 2px groove;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 3px 3px 12px 8px #45c490;
+  }
+
+  .contactText {
+    font-size: 18px;
+    color: white;
   }
 
   #gitHub,
