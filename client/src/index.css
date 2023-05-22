@@ -58,21 +58,45 @@ code {
   }
 
   .photographyText {
-    color: "white";
+    color: white;
     text-align: center;
     font-family: "Open Sans";
-    font-size: "20px";
-    width: "50%";
-    margin-left: "auto";
-    margin-right: "auto";
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photographyBackupText {
+    color: white;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .photographyPhotos {
     color: black;
+    font-size: 15px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     font-family: 'Open Sans';
     display: flex;
+    width: 100%;
     gap: 30px;
+  }
+
+  .photographyContainer {
+    height: 100vh;
+    background-color: #212529;
+  }
+
+  .photographyPage {
+    width: 100vw;
+    background-color: #212529;
   }
 }
 
@@ -105,13 +129,45 @@ code {
   }
 
   .photographyText {
-    color: "white";
+    color: white;
     text-align: center;
     font-family: "Open Sans";
-    font-size: "20px";
-    width: "50%";
-    margin-left: "auto";
-    margin-right: "auto";
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photographyBackupText {
+    color: white;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photographyPhotos {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Open Sans';
+    display: flex;
+    width: 90%;
+    gap: 30px;
+  }
+
+  .photographyContainer {
+    height: 100vh;
+    background-color: #212529;
+  }
+
+  .photographyPage {
+    width: 100vw;
+    background-color: #212529;
   }
 }
 
@@ -153,15 +209,53 @@ code {
     margin-right: auto;
   }
 
-  /* .photographyText {
-    color: 'white';
+  .photographyText {
+    color: white;
     text-align: center;
+    font-family: "Open Sans";
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photographyBackupText {
+    color: white;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photographyPhotos {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     font-family: 'Open Sans';
-    font-size: '20px';
-    width: '50%';
-    margin-left: "auto";
-    margin-right: "auto";
-} */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    gap: 30px;
+  }
+
+  .photographyContainer {
+    height: auto;
+    background-color: #212529;
+  }
+
+  .photographyPage {
+    width: 100vw;
+    background-color: #212529;
+  }
+
+  .projectFooter {
+    display: none;
+  }
 }
 
 /* Mobile */
@@ -225,6 +319,15 @@ code {
     align-items: center;
     width: 80%;
     gap: 30px;
+  }
+
+  .photographyContainer {
+    height: auto;
+    background-color: #212529;
+  }
+
+  .projectFooter {
+    display: none;
   }
 
   #gitHub,

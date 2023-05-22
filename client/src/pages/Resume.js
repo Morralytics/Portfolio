@@ -21,7 +21,7 @@ export const Resume = () => {
     const styles = {
         background: {
             backgroundColor: '#212529',
-            height: '100vh'
+            height: 'auto'
         },
         text: {
             color: 'white',
