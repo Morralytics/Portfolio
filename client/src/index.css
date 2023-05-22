@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -33,7 +33,7 @@ code {
   #textDescription {
     text-align: center;
     color: white;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
   }
 
   #textWelcome {
@@ -54,6 +54,16 @@ code {
     font-size: 25px;
     color: white;
     text-align: center;
+  }
+
+  .photographyText {
+    color: "white";
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: "20px";
+    width: "50%";
+    margin-left: "auto";
+    margin-right: "auto";
   }
 }
 
@@ -62,7 +72,7 @@ code {
   #textDescription {
     text-align: center;
     color: white;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
   }
 
   #textWelcome {
@@ -83,6 +93,16 @@ code {
     font-size: 25px;
     color: white;
     text-align: center;
+  }
+
+  .photographyText {
+    color: "white";
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: "20px";
+    width: "50%";
+    margin-left: "auto";
+    margin-right: "auto";
   }
 }
 
@@ -92,10 +112,10 @@ code {
   #textDescription {
     text-align: center;
     color: white;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
   }
 
-   #textWelcome {
+  #textWelcome {
     font-size: 35px;
   }
 
@@ -123,6 +143,16 @@ code {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* .photographyText {
+    color: 'white';
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: '20px';
+    width: '50%';
+    margin-left: "auto";
+    margin-right: "auto";
+} */
 }
 
 /* Mobile */
@@ -131,10 +161,10 @@ code {
   #textDescription {
     text-align: center;
     color: white;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
   }
 
-   #textWelcome {
+  #textWelcome {
     font-size: 30px;
   }
 
@@ -147,17 +177,37 @@ code {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .projectText {
     font-size: 15px;
     color: white;
     text-align: center;
   }
 
+  .photographyText {
+    color: white;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photographyBackupText {
+    color: white;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #gitHub,
   #linkedIn {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -169,7 +219,7 @@ code {
     margin-right: auto;
   }
 
-  .technology  {
+  .technology {
     width: 50px;
     margin-left: -5px;
   }
