@@ -9,7 +9,7 @@ export const About = () => {
     const styles = {
         background: {
             backgroundColor: '#212529',
-            height: '100vh'
+            height: 'auto'
         },
         listStyle: {
             lineHeight: '30px',
@@ -36,10 +36,11 @@ export const About = () => {
                 <br></br>
                 <div className="photographyBackupText" style={styles.secondaryText}>
                     <p>
-                        Each role of a Software Engineer is incredibly import for the stability of the application being worked on. The skills that need to be brought to the table now is more than just a simple webpage and the skills I have are as follows:
+                        Each role of a Software Engineer is incredibly import for the stability of the application being worked on. The skills that need to be brought to the table now is more than just a simple webpage and the skills I have allow me to create some wonderful projects of my own.
                     </p>
                 </div>
             </Container>
+            <br></br>
         </div>
     )
 }

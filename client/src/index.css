@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  height: 100vh;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
@@ -64,6 +65,14 @@ code {
     width: "50%";
     margin-left: "auto";
     margin-right: "auto";
+  }
+
+  .photographyPhotos {
+    color: black;
+    text-align: center;
+    font-family: 'Open Sans';
+    display: flex;
+    gap: 30px;
   }
 }
 
@@ -202,6 +211,20 @@ code {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .photographyPhotos {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Open Sans';
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    gap: 30px;
   }
 
   #gitHub,
